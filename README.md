@@ -1,8 +1,8 @@
 # Autoencoder
 
-This repository is developed for an Encoder - Decoder model which is connected to a Multilayer Perceptron in order to classify MNIST images. There are 10 classes in this dataset including handwritten digits from 0 to 9.
+This repository is developed for an Encoder - Decoder model which is connected to a Multilayer Perceptron in order to classify MNIST images. There are total of 10 classes in this dataset including handwritten digits from 0 to 9.
 
-[MNIST](https://www.kaggle.com/datasets/hojjatk/mnist-dataset) dataset is called by torchvision.dataset.
+[MNIST](https://www.kaggle.com/datasets/hojjatk/mnist-dataset) dataset is called from torchvision.dataset.
 
 ***Some Image Samples From the Dataset***
 
@@ -12,9 +12,9 @@ This repository is developed for an Encoder - Decoder model which is connected t
                                                                                                                      
 # Introduction
 
-This repo has an original Encoder - Decoder architecture consisted of Conv2D and Pooling layers, and a classifier that is solely multilayer perceptron. This model includes total **7000** images.
+This repo has an original Encoder - Decoder architecture consisting of Conv2D and Pooling layers, and a classifier that is solely multilayer perceptron. This model includes a total of **7000** images.
 
-  - 6000 images are spared for training whereas remaining 1000 images are utilized for testing the model.
+  - 6000 images are spared for training whereas the remaining 1000 images are utilized for testing the model.
   - This model is trained with the following parameters:
     - Loss function -> MSE Loss (Autoencoder) ve CrossEntropy Loss (Multilayer Perceptron)
     - Optimizer -> Adam
@@ -26,12 +26,12 @@ All necessary codes can be found in [**google colab**](https://github.com/ekaraa
 
 # Results
 
-After feature extraction model works appropriately, 2 different approaches are applied for the classification task:
+After the feature extraction model works appropriately, 2 different approaches are applied for the classification task:
   
-  1 - Loss function only applies for MLP model <br/>
-  2 - Loss function applies for both Encoder and MLP models simultaneously.
+  1 - The loss function only applies to the MLP model <br/>
+  2 - The loss function applies to both Encoder and MLP models simultaneously.
   
-For the first approach, accuracy result is obtained as **87.34%** while second approach's result is **93.18%** as expected.
+For the first approach, accuracy result is obtained as **87.34%** while the second approach's result is **93.18%** as expected.
 
 Training loss curve can be seen in below:
 
